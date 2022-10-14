@@ -1,13 +1,30 @@
-function CardVideo(props) {
-  function reproduzVideo(props) {
-    alert("O vídeo está sendo reproduzido");
-  }
-  return (
-    <div className="box-pagina-principal" onClick={reproduzVideo}>
-      <img src={props.image1} alt={props.textoAlternativo} />
-      <h4>{props.titulo}</h4>
-    </div>
-  );
-}
+import React from "react";
+import { InfoUsuario } from "./InfoUsuario";
+import styled from 'styled-components'
 
-export default CardVideo;
+const TituloColor = styled.h4`
+font-family: Roboto;
+border: 1px solid white;
+border-radius: 5px;
+`
+const ImagemColor = styled.img`
+border: 1px solid white;
+border-radius: 50px;
+`
+export function CardVideo(props){
+        function reproduzVideo() {
+            alert("O vídeo está sendo reproduzido");
+        }
+        console.log(props)
+    return (
+       
+            <div className="box-pagina-principal" onClick={reproduzVideo}>
+
+              <ImagemColor src={props.imagem} alt="" />
+
+
+              <TituloColor>{props.titulo}</TituloColor>
+              <InfoUsuario  usuario = {props.usuario} />
+            </div>
+    )
+}

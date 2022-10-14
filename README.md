@@ -1,44 +1,33 @@
-# styled-components
+# Props
 
 Caso não lembre como funciona o processo de entrega, clique [**aqui**](https://github.com/labenuexercicios/instrucoes-entrega)
 
 ## O que você precisa saber e praticar desta aula?
-1. Estilizar componentes;
-2. Estilizar componentes aninhados;
-3. Estilizar globalmente
+1. Enviar props para componentes filhos;
+2. Receber props do componente pai;
+3. Acessar props
 
 
 ## Como eu vou executar os exercícios?
 
-Vamos utilizar o LabeTube, da aula anterior. Nesse exercício vamos mudar a forma que nosso projeto é estilizado. Ao invés de usar o CSS, vamos usar o JS com `styled-components`. Lembre-se sempre de instalar e importar o styled-components antes de usá-lo.
-
-```bash
-npm install styled-components
-```
-
-```jsx
-import styled from 'styled-components'
-```
-
+Vamos utilizar o LabeTube, da aula anterior. Nesse exercício vamos tornar nosso projeto mais dinâmico, alterando os vídeos para que deixem de ser o mesmo vídeo, e seus valores sejam criados e passados por props.
 
 
 Para executar este exercício, você pode criar uma nova aplicação React, como foi visto na aula passada, ou utilizar o link abaixo para ir ao template no **CodeSandbox**. Este template para exatamente onde o exercício da última aula acaba.
 
-[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-styled-components-6c597o)
+[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-props-b6037t?file=/src/App.js)
 
 Caso queira usar uma aplicação React, rode `npm install` neste projeto, para baixar as dependências e poder executá-lo.
 
 # Exercício 1
 
-Altere os elementos `header`,`main`, `nav` do componente App, para que sua estilização passe a ser feita usando `styled-components`.
+No App.js, crie um objeto com as informações do seu vídeo que são mostradas na tela (imagem e título).
+Passe essas informações por props para o seu componente CardVideo, criado na aula passada.
 
 # Exercício 2
-Altere o componente CardVideo, para que ele seja estilzado com `styled-components`.
-
-
-
+Agora, no componente pai de InfosUsuario, componente também criado na aula passada. Passe as informações do usuário por props.
 
 ## Informações úteis sobre o assunto
-[Documentação do styled-components em inglês)](https://styled-components.com/docs)
-[Criando styled-components com React | Blog Matheus Castiglioni](https://blog.matheuscastiglioni.com.br/criando-styled-components-com-react/)
+[Props | Documentação do React](https://www.geeksforgeeks.org/reactjs-components/)
+[Componentes e Props | Labenu](https://www.loom.com/share/f2a991fc9d4d49f8aeb068bee05b46b9)
 
