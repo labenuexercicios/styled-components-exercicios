@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 function CardVideo(props) {
   function reproduzVideo(props) {
     alert("O vídeo está sendo reproduzido");

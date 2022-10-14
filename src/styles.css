@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-header {
+/* header {
   background-color: orange;
   display: flex;
   align-items: center;
@@ -22,13 +22,13 @@ header {
 main {
   min-height: 80%;
   display: flex;
-}
+} */
 
-.menu-vertical {
+/* .menu-vertical {
   flex-basis: 200px;
   border-right-style: solid;
   border-right-width: thin;
-}
+} */
 
 .botoes-meunu-vertical {
   list-style-type: none;
