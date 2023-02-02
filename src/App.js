@@ -1,6 +1,6 @@
 import React from "react";
-import CardVideo from "./Componentes/CardVideo";
-import "./styles.css";
+import CardVideo from "./Componentes/CardVideo/CardVideo";
+import { GlobalStyled, TelaInteira, Header, Main, MenuVertical, PainelDeVideos, Footer } from "./GlobalStyled";
 
 export default function App() {
   const card1 = {
@@ -10,38 +10,41 @@ export default function App() {
   };
 
   return (
-    <div>
-      <div className="tela-inteira">
-        <header>
-          <h1>LabeTube</h1>
-          <input type="text" placeholder="Busca" id="campoDeBusca" />
-        </header>
+    <>
+      <GlobalStyled />
+      <div>
+        <TelaInteira>
+          <Header>
+            <h1>LabeTube</h1>
+            <input type="text" placeholder="Busca" id="campoDeBusca" />
+          </Header>
 
-        <main>
-          <nav className="menu-vertical">
-            <ul>
-              <li className="botoes-meunu-vertical">Início</li>
-              <li className="botoes-meunu-vertical">Em alta</li>
-              <li className="botoes-meunu-vertical">Inscrições</li>
-              <hr />
-              <li className="botoes-meunu-vertical">Originais</li>
-              <li className="botoes-meunu-vertical">Histórico</li>
-            </ul>
-          </nav>
+          <Main>
+            <MenuVertical>
+              <ul>
+                <li className="botoes-meunu-vertical">Início</li>
+                <li className="botoes-meunu-vertical">Em alta</li>
+                <li className="botoes-meunu-vertical">Inscrições</li>
+                <hr />
+                <li className="botoes-meunu-vertical">Originais</li>
+                <li className="botoes-meunu-vertical">Histórico</li>
+              </ul>
+            </MenuVertical>
 
-          <section className="painel-de-videos">
-            <CardVideo
-              image1={card1.imagemDoVideo}
-              titulo={card1.titulo}
-              textoAlternativo={card1.textoAlternativo}
-            />
-          </section>
-        </main>
+            <PainelDeVideos>
+              <CardVideo
+                image1={card1.imagemDoVideo}
+                titulo={card1.titulo}
+                textoAlternativo={card1.textoAlternativo}
+              />
+            </PainelDeVideos>
+          </Main>
 
-        <footer>
-          <h4>Oi! Eu moro no footer!</h4>
-        </footer>
+          <Footer>
+            <h4>Oi! Eu moro no Footer!</h4>
+          </Footer>
+        </TelaInteira>
       </div>
-    </div>
+    </>
   );
 }
