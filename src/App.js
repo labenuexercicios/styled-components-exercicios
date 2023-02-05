@@ -1,6 +1,9 @@
 import React from "react";
 import CardVideo from "./Componentes/CardVideo";
 import "./styles.css";
+import { GlobalStyle } from "./GlobalStyle";
+import { Header, Main, Menu } from "./slyle";
+
 
 export default function App() {
   const card1 = {
@@ -11,14 +14,15 @@ export default function App() {
 
   return (
     <div>
+      <GlobalStyle/>
       <div className="tela-inteira">
-        <header>
+        <Header>
           <h1>LabeTube</h1>
           <input type="text" placeholder="Busca" id="campoDeBusca" />
-        </header>
+        </Header>
 
-        <main>
-          <nav className="menu-vertical">
+        <Main>
+          <Menu>
             <ul>
               <li className="botoes-meunu-vertical">Início</li>
               <li className="botoes-meunu-vertical">Em alta</li>
@@ -27,7 +31,7 @@ export default function App() {
               <li className="botoes-meunu-vertical">Originais</li>
               <li className="botoes-meunu-vertical">Histórico</li>
             </ul>
-          </nav>
+          </Menu>
 
           <section className="painel-de-videos">
             <CardVideo
@@ -36,7 +40,7 @@ export default function App() {
               textoAlternativo={card1.textoAlternativo}
             />
           </section>
-        </main>
+        </Main>
 
         <footer>
           <h4>Oi! Eu moro no footer!</h4>

@@ -10,26 +10,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  background-color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-  height: 10%;
-}
-
-main {
-  min-height: 80%;
-  display: flex;
-}
-
-.menu-vertical {
-  flex-basis: 200px;
-  border-right-style: solid;
-  border-right-width: thin;
-}
-
 .botoes-meunu-vertical {
   list-style-type: none;
 }
@@ -45,13 +25,7 @@ main {
 }
 
 .box-pagina-principal {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-  grid-template-columns: 1fr;
-  border-style: solid;
-  border-width: thin;
-  align-items: start;
-  justify-items: stretch;
+  
 }
 
 footer {
