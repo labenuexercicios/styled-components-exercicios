@@ -24,7 +24,7 @@ import styled from 'styled-components'
 
 Para executar este exercício, você pode criar uma nova aplicação React, como foi visto na aula passada, ou utilizar o link abaixo para ir ao template no **CodeSandbox**. Este template para exatamente onde o exercício da última aula acaba.
 
-[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-styled-components-6c597o)
+[**Template do CodeSandbox**](https://codesandbox.io/s/template-exercicio-styled-components-wg0q96)
 
 Caso queira usar uma aplicação React, rode `npm install` neste projeto, para baixar as dependências e poder executá-lo.
 
