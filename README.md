@@ -39,5 +39,5 @@ Altere o componente CardVideo, para que ele seja estilzado com `styled-component
 
 
 ## Informações úteis sobre o assunto
-[Documentação do styled-components em inglês)](https://styled-components.com/docs)
+[Documentação do styled-components em inglês](https://styled-components.com/docs)
 
