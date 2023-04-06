@@ -40,5 +40,4 @@ Altere o componente CardVideo, para que ele seja estilzado com `styled-component
 
 ## Informações úteis sobre o assunto
 [Documentação do styled-components em inglês)](https://styled-components.com/docs)
-[Criando styled-components com React | Blog Matheus Castiglioni](https://blog.matheuscastiglioni.com.br/criando-styled-components-com-react/)
 
